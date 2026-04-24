@@ -45,16 +45,13 @@ public class MahasiswaDemo11 {
                 case 3:
                     Mahasiswa11 lihat = stack.peek();
                     if (lihat != null) {
-                        System.out.println("Tugas terakhir dikumpulkan oleh" + lihat.nama);
+                        System.out.println("Tugas terakhir dikumpulkan oleh " + lihat.nama);
                     }
                     break;
                 case 4:
                     System.out.println("Daftar semua tugas");
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print();
-                    break;
-                default:
-                    System.out.println("Pilihan tidak valid.");
                     break;
                 case 5:
                     Mahasiswa11 terbawah = stack.lihatTerbawah();
@@ -64,6 +61,9 @@ public class MahasiswaDemo11 {
                     break;
                 case 6:
                     System.out.println("Jumlah tugas: " + stack.jumlah());
+                    break;
+                default:
+                System.out.println("Pilihan tidak valid.");
                     break;
             }
         } while (pilih >= 1 && pilih <= 6);

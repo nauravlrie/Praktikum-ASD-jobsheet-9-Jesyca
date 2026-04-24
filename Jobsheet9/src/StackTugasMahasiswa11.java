@@ -53,4 +53,12 @@ public class StackTugasMahasiswa11 {
             System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
         }
     }
+    public Mahasiswa11 lihatTerbawah() {
+        if (!isEmpty()) {
+            return stack [0];
+        } else {
+            System.out.println("Stack kosong!");
+            return null;
+        }
+    }
 }
